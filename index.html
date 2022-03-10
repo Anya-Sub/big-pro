@@ -1,10 +1,85 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-     <link rel="stylesheet" href="./src/scss/styles.scss">
-      <title>Название страницы</title>
+      <link rel="stylesheet" href="./src/scss/styles.scss">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    </head>
    <body>  
-      Моя первая веб-страница
+      <div class="container">
+         <header>
+            <div class="menu">
+               <div class="menu__icon">
+                  <img src="./src/scss/pictures/logo.jpg" alt="logo">
+               </div>
+               <div class="menu__search">    
+                  <div class="input-group input-group-lg">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text" id="inputGroup-sizing-lg">Поиск</span>
+                     </div>
+                     <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                   </div>    
+               </div>
+               <div class="menu__box">
+                  <form>
+                     <button><img src="./src/scss/pictures/box.webp" alt="Кнопка «button»"></button>
+                  </form>
+               </div>
+            </div>
+         </header>
+         <section class="all__info">
+           <div class = "all__info-sliders">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img class="img-fluid" src="./src/scss/pictures/spec-1.jpg" alt="spec-1">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="img-fluid" src="./src/scss/pictures/spec-2.jpg" alt="spec-2">
+                 </div>
+                 <div class="carousel-item">
+                     <img class="img-fluid" src="./src/scss/pictures/spec-3.jpg" alt="spec-3">
+                 </div>
+               </div>
+               <!-- Элементы управления -->
+               <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Предыдущий</span>
+               </a>
+               <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="sr-only">Следующий</span>
+               </a>
+             </div>
+           </div>
+            <div class="all__info-sales">
+               <div class="all__info-sales-image-1">
+                  <img src="./src/scss/pictures/model-1.png" alt="model-1">
+                  <p>байка 1200  -20%</p>
+               </div>
+               <div class="all__info-sales-image-2">
+                  <img src="./src/scss/pictures/model-2.jpg" alt="model-2">
+                  <p>штаны 700  -50%</p>
+               </div>
+               <div class="all__info-sales-image-3">
+                  <img src="./src/scss/pictures/model-3.jpg" alt="model-3">
+                  <p>костюм 5000  -20%</p>
+               </div>
+               <div class="all__info-sales-image-4">
+                  <img src="./src/scss/pictures/model-4.jpg" alt="model-4">
+                  <p>пиджак 3000  -20%</p>
+               </div>
+               <div class="all__info-sales-image-5">
+                  <img src="./src/scss/pictures/model-5.jpg" alt="model-5">
+                  <p>костюм 5000  -20%</p>
+               </div>
+               <div class="all__info-sales-image-6">
+                  <img src="./src/scss/pictures/model-6.webp" alt="model-6">
+                  <p>штаны 1200  -20%</p>
+               </div>
+            </div>
+          </section>
+       </div>
+       <script src="./src/js/index.js"></script>
+       <script src="./src/js/utill.js"></script>
    </body>
 </html>
