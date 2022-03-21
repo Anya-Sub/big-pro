@@ -36,82 +36,109 @@
   width: 100%;
 }
 
+
+.carousel{
+  position: relative;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.carousel__image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel__track-container{
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-track{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%;
+  position: relative;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.carousel__button--left{
+  left: -40px;
+}
+
+.carousel__button--right{
+  right: -40px;
+}
+.carousel__button img{
+  width: 30px;
+}
+
+.carousel__nav{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel-indicator{
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: rgba(0,0,0,.3);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.carousel-indicator.currrent-slide{
+  background: rgba(0,0,0,.75);
+}
 .all__info-sales {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin-top: 100px;
 
-  .all__info-sales-image-1 {
+  .all__info-sales-image {
     flex-direction: column;
-    img{
-      height: 200px;
+        img{
+      height: 180px;
       width: 100%;
       object-fit: cover;
     }
-    p{
-      background-color: pink;
-      color: red;
+    .all__info-sales-image-inf{
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(204, 197, 197);
+      p{
+        color: black;
+      } 
+      button{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 15px;
+        height: 20px;
+        border: solid grey 2px;
+        background-color: rgb(204, 197, 197);
+        color: grey;
+      }
     }
 }
-  .all__info-sales-image-2 {
-    flex-direction: column;
-
-     img{
-       height: 200px;
-       width: 100%;
-     }
-     p{
-      background-color: pink;
-      color: red;
-    }
-  }
-  .all__info-sales-image-3 {
-    flex-direction: column;
-
-     img{
-       height: 200px;
-       width: 100%;
-     }
-     p{
-      background-color: pink;
-      color: red;
-    }
-  }
-  .all__info-sales-image-4 {
-    flex-direction: column;
-
-     img{
-       height: 200px;
-       width: 100%;
-     }
-     p{
-      background-color: pink;
-      color: red;
-    }
-  }
-  .all__info-sales-image-5 {
-    flex-direction: column;
-
-     img{
-       height: 200px;
-       width: 100%;
-     }
-     p{
-      background-color: pink;
-      color: red;
-    }
-  }
-  .all__info-sales-image-6 {
-    flex-direction: column;
-
-     img{
-       height: 200px;
-       width: 100%;
-     }
-     p{
-      background-color: pink;
-      color: red;
-    }
-  }
 }
