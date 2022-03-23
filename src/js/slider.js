@@ -44,8 +44,8 @@ nextButton.addEventListener('click', e => {
   
   moveToSlide(track, currentSlide, nextSlide);
   updateDots(currentDot, nextDot);
-})
-;
+});
+
 dotsNav.addEventListener('click', e => {
   const targetDot = e.target.closest('button');
   if (!targetDot) return;
